@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mohammad Misbah is a Full Stack Developer and Software Engineer building modern, scalable, and responsive web applications."
+    />
+    <meta
+      name="keywords"
+      content="Mohammad Misbah, Full Stack Developer, Software Engineer, Java Developer, Spring Boot, WordPress Developer, Portfolio"
+    />
+    <meta name="theme-color" content="#0A0A0A" />
+    <meta property="og:title" content="Mohammad Misbah | Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="Premium interactive portfolio for Mohammad Misbah, a Software Engineer and Full Stack Developer from Delhi, India."
+    />
+    <meta property="og:image" content="assets/profile.jpeg" />
+    <meta property="og:type" content="website" />
+    <title>Mohammad Misbah | Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mohammad Misbah",
+        "jobTitle": "Full Stack Developer | Software Engineer | Web Developer",
+        "image": "assets/profile.jpeg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Delhi",
+          "addressCountry": "India"
+        },
+        "sameAs": [
+          "https://github.com/misbahcode",
+          "https://www.linkedin.com/in/mohdmisbah/",
+          "https://www.instagram.com/miisbxh/"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div class="loader" id="loader" aria-hidden="true">
+      <div class="loader__core"></div>
+      <div class="loader__text">
+        <span class="loader__label">Loading portfolio</span>
+        <span class="loader__name">Mohammad Misbah</span>
+      </div>
+    </div>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="cursor cursor--dot" id="cursorDot"></div>
+    <div class="cursor cursor--ring" id="cursorRing"></div>
+    <div class="ambient ambient--one"></div>
+    <div class="ambient ambient--two"></div>
+    <div class="ambient ambient--three"></div>
+    <div class="noise-layer"></div>
+
+    <header class="site-header" id="top">
+      <div class="container header__inner glass surface" data-surface>
+        <a class="brand" href="#home" aria-label="Go to home section">
+          <span class="brand__mark">MM</span>
+          <span class="brand__text">Mohammad Misbah</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="siteNav"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="siteNav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="heroTitle">
+        <div class="hero__particles" id="heroParticles" aria-hidden="true"></div>
+        <div class="hero__spotlight" id="heroSpotlight" aria-hidden="true"></div>
+
+        <div class="container hero__grid">
+          <div class="hero__content" data-reveal>
+            <span class="eyebrow">
+              Full Stack Developer | Software Engineer | Web Developer
+            </span>
+            <h1 id="heroTitle">Building modern web experiences with clarity, speed, and intent.</h1>
+            <p class="hero__typing">
+              <span class="hero__typing-prefix">I craft as a</span>
+              <span class="hero__typing-text" id="typingText"></span>
+              <span class="hero__typing-caret"></span>
+            </p>
+            <p class="hero__summary">
+              Mohammad Misbah is a Delhi-based developer currently pursuing CDAC DAC in Pune,
+              focused on scalable web applications, polished responsive interfaces, Java-powered
+              systems, and continuous cloud-era learning.
+            </p>
+
+            <div class="hero__actions">
+              <a class="button button--primary magnetic" href="assets/Mohammad_Misbah_Resume.txt" download>
+                <span>Download Resume</span>
+              </a>
+              <a class="button button--ghost magnetic" href="#contact">
+                <span>Contact Me</span>
+              </a>
+            </div>
+
+            <div class="hero__meta">
+              <div class="meta-chip glass surface" data-surface>
+                <span class="meta-chip__label">Location</span>
+                <span class="meta-chip__value">Delhi, India</span>
+              </div>
+              <div class="meta-chip glass surface" data-surface>
+                <span class="meta-chip__label">Current Focus</span>
+                <span class="meta-chip__value">CDAC DAC | Pune</span>
+              </div>
+              <div class="meta-chip glass surface" data-surface>
+                <span class="meta-chip__label">Passion</span>
+                <span class="meta-chip__value">Scalable Products</span>
+              </div>
+            </div>
+
+            <div class="hero__stats">
+              <article class="stat-card glass surface" data-surface data-reveal>
+                <span class="stat-card__number" data-counter="2">0</span>
+                <span class="stat-card__label">Featured Projects</span>
+              </article>
+              <article class="stat-card glass surface" data-surface data-reveal>
+                <span class="stat-card__number" data-counter="3">0</span>
+                <span class="stat-card__label">Education Milestones</span>
+              </article>
+              <article class="stat-card glass surface" data-surface data-reveal>
+                <span class="stat-card__number" data-counter="5">0</span>
+                <span class="stat-card__label">Core Services</span>
+              </article>
+              <article class="stat-card glass surface" data-surface data-reveal>
+                <span class="stat-card__number" data-counter="3">0</span>
+                <span class="stat-card__label">Languages Spoken</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="hero__visual" data-reveal>
+            <div class="profile-card glass surface spotlight" data-surface data-tilt>
+              <div class="profile-card__halo"></div>
+              <div class="profile-card__image-wrap">
+                <img
+                  class="profile-card__image"
+                  src="assets/profile.jpeg"
+                  alt="Portrait of Mohammad Misbah"
+                />
+              </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="section-head__eyebrow">About Me</span>
+            <h2>Engineering polished experiences from interface to infrastructure.</h2>
+            <p>
+              I enjoy building web applications that feel thoughtful in every layer, from clean UI
+              systems and intuitive interactions to robust Java backends, WordPress solutions, and
+              future-ready cloud learning.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <article class="about-panel glass surface spotlight" data-surface data-reveal>
+              <h3>Professional Summary</h3>
+              <p>
+                Mohammad Misbah combines full stack development, modern web technologies, Java,
+                Spring Boot foundations, WordPress execution, and strong software engineering
+                instincts to build responsive, scalable digital products. His work is shaped by
+                problem solving, performance awareness, user-first thinking, and a steady drive to
+                learn emerging technologies.
+              </p>
+              <div class="about-panel__bullets">
+                <span>Scalable Applications</span>
+                <span>Modern Web Interfaces</span>
+                <span>Cloud-Oriented Learning</span>
+                <span>Innovative Solutions</span>
+              </div>
+            </article>
+
+            <div class="about-highlights">
+              <article class="mini-card glass surface spotlight" data-surface data-reveal>
+                <h3>Full Stack Mindset</h3>
+                <p>Comfortable bridging frontend experience, backend structure, and deployment goals.</p>
+              </article>
+              <article class="mini-card glass surface spotlight" data-surface data-reveal>
+                <h3>UI Precision</h3>
+                <p>Focused on responsive layouts, animation quality, and premium interaction details.</p>
+              </article>
+              <article class="mini-card glass surface spotlight" data-surface data-reveal>
+                <h3>Continuous Growth</h3>
+                <p>Actively exploring cloud computing, modern engineering workflows, and better systems design.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="section-head__eyebrow">Education Timeline</span>
+            <h2>A learning path built around software depth and practical execution.</h2>
+            <p>
+              Each step has added stronger fundamentals in computing, application design, and
+              hands-on software development.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline__item glass surface spotlight" data-surface data-reveal>
+              <span class="timeline__marker">01</span>
+              <div class="timeline__content">
+                <h3>CDAC DAC</h3>
+                <p class="timeline__meta">Current | Pune</p>
+                <p>
+                  Advancing practical software engineering skills with focus on modern application
+                  development and industry-oriented computing.
+                </p>
+              </div>
+            </article>
+            <article class="timeline__item glass surface spotlight" data-surface data-reveal>
+              <span class="timeline__marker">02</span>
+              <div class="timeline__content">
+                <h3>B.Tech in Computer Science &amp; Engineering</h3>
+                <p class="timeline__meta">Jamia Hamdard University | Delhi</p>
+                <p>
+                  Built a solid base in programming, software engineering, system thinking, and
+                  application development workflows.
+                </p>
+              </div>
+            </article>
+            <article class="timeline__item glass surface spotlight" data-surface data-reveal>
+              <span class="timeline__marker">03</span>
+              <div class="timeline__content">
+                <h3>Diploma in Computer Science Engineering</h3>
+                <p class="timeline__meta">Jamia Millia Islamia | Delhi</p>
+                <p>
+                  Strengthened technical foundations early through focused engineering study and
+                  hands-on computer science exposure.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="section-head__eyebrow">Experience</span>
+            <h2>Shaping web experiences through responsive delivery and iterative refinement.</h2>
+            <p>
+              Professional experience centered on creating dynamic, mobile-first websites with
+              better usability and performance.
+            </p>
+          </div>
+
+          <article class="experience-card glass surface spotlight" data-surface data-reveal>
+            <div class="experience-card__top">
+              <div>
+                <h3>Web Developer Intern</h3>
+                <p>GAO Tek Inc.</p>
+              </div>
+              <span class="experience-card__time">May 2025 - August 2025</span>
+            </div>
+            <div class="experience-card__list">
+              <span>Designed responsive websites</span>
+              <span>Delivered WordPress development work</span>
+              <span>Built with HTML, CSS, and JavaScript</span>
+              <span>Improved UI and UX quality</span>
+              <span>Applied mobile-first design thinking</span>
+              <span>Optimized performance and dynamic interactions</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="section-head__eyebrow">Skills</span>
+            <h2>Focused tools and technologies for building responsive, maintainable products.</h2>
+            <p>
+              Filter the stack to explore the areas where I spend most of my time building,
+              learning, and improving.
+            </p>
+          </div>
+
+          <div class="filter-bar glass surface" data-surface data-reveal>
+            <button class="filter-chip is-active" type="button" data-filter="all">All</button>
+            <button class="filter-chip" type="button" data-filter="frontend">Frontend</button>
+            <button class="filter-chip" type="button" data-filter="backend">Backend</button>
+            <button class="filter-chip" type="button" data-filter="tools">Tools</button>
+            <button class="filter-chip" type="button" data-filter="concepts">Concepts</button>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card glass surface spotlight" data-surface data-category="frontend" data-reveal>
+              <h3>HTML5, CSS3, JavaScript</h3>
+              <p>Modern layout structure, polished visuals, interaction design, and browser-ready interfaces.</p>
+              <div class="skill-meter">
+                <span class="skill-meter__fill" data-level="92"></span>
+              </div>
+            </article>
+            <article class="skill-card glass surface spotlight" data-surface data-category="frontend" data-reveal>
+              <h3>Bootstrap &amp; Responsive Design</h3>
+              <p>Flexible UI systems shaped for desktop, tablet, and mobile experiences.</p>
+              <div class="skill-meter">
+                <span class="skill-meter__fill" data-level="89"></span>
+              </div>
+            </article>
+            <article class="skill-card glass surface spotlight" data-surface data-category="backend" data-reveal>
+              <h3>Java, JSP, Servlets, JDBC</h3>
+              <p>Server-side application logic, structured workflows, and data-driven web solutions.</p>
+              <div class="skill-meter">
+                <span class="skill-meter__fill" data-level="87"></span>
+              </div>
+            </article>
+            <article class="skill-card glass surface spotlight" data-surface data-category="backend" data-reveal>
+              <h3>Spring Boot</h3>
+              <p>Growing backend expertise for modern API design, scalable services, and production-friendly architecture.</p>
+              <div class="skill-meter">
+                <span class="skill-meter__fill" data-level="80"></span>
+              </div>
+            </article>
+            <article class="skill-card glass surface spotlight" data-surface data-category="tools" data-reveal>
+              <h3>MySQL, Maven, Git, GitHub</h3>
+              <p>Core tooling for persistence, project structure, source control, and efficient development flow.</p>
+              <div class="skill-meter">
+                <span class="skill-meter__fill" data-level="84"></span>
+              </div>
+            </article>
+            <article class="skill-card glass surface spotlight" data-surface data-category="tools" data-reveal>
+              <h3>WordPress &amp; VS Code</h3>
+              <p>Fast publishing workflows, practical customization, and productivity-focused development.</p>
+              <div class="skill-meter">
+                <span class="skill-meter__fill" data-level="86"></span>
+              </div>
+            </article>
+            <article class="skill-card glass surface spotlight" data-surface data-category="concepts" data-reveal>
+              <h3>OOP, MVC, REST APIs</h3>
+              <p>Engineering concepts that help keep products modular, understandable, and scalable.</p>
+              <div class="skill-meter">
+                <span class="skill-meter__fill" data-level="83"></span>
+              </div>
+            </article>
+            <article class="skill-card glass surface spotlight" data-surface data-category="concepts" data-reveal>
+              <h3>Cloud &amp; Deployment Concepts</h3>
+              <p>AWS fundamentals, cloud curiosity, and a mindset geared toward real-world shipping.</p>
+              <div class="skill-meter">
+                <span class="skill-meter__fill" data-level="76"></span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="section-head__eyebrow">Projects</span>
+            <h2>Featured work designed around real interaction, structured logic, and better usability.</h2>
+            <p>
+              Two focused builds that highlight voice interaction, secure information handling, and
+              practical software design.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card glass surface spotlight" data-surface data-tilt data-reveal>
+              <div class="project-card__header">
+                <span class="project-card__tag">Project 01</span>
+                <h3>INERTIA - Virtual Assistant</h3>
+              </div>
+              <p>
+                A voice-enabled web application where users interact through speech commands and
+                receive real-time responses through recognition and text-to-speech flows.
+              </p>
+              <div class="badge-row">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Speech Recognition API</span>
+                <span>Text To Speech</span>
+              </div>
+              <div class="project-card__actions">
+                <a
+                  class="button button--small button--primary"
+                  href="https://github.com/misbahcode/INERTIA---A-Virtual-Assistant"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub Repo
+                </a>
+                <button class="button button--small button--ghost open-modal" type="button" data-project="inertia">
+                  View Details
+                </button>
+              </div>
+            </article>
+
+            <article class="project-card glass surface spotlight" data-surface data-tilt data-reveal>
+              <div class="project-card__header">
+                <span class="project-card__tag">Project 02</span>
+                <h3>University Result Application</h3>
+              </div>
+              <p>
+                A secure academic result management application built to automate result processing
+                and streamline record publication with structured backend logic.
+              </p>
+              <div class="badge-row">
+                <span>Java</span>
+                <span>Servlets</span>
+                <span>JSP</span>
+                <span>JDBC</span>
+                <span>MySQL</span>
+                <span>Maven</span>
+              </div>
+              <div class="project-card__actions">
+                <a
+                  class="button button--small button--primary"
+                  href="https://github.com/misbahcode/University-Result-Application"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub Repo
+                </a>
+                <button class="button button--small button--ghost open-modal" type="button" data-project="results">
+                  View Details
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="achievements">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="section-head__eyebrow">Achievements &amp; Roadmap</span>
+            <h2>A professional journey shaped by delivery, learning, and deeper technical ambition.</h2>
+            <p>
+              Growth is happening in layers: stronger products today, stronger systems thinking for
+              tomorrow.
+            </p>
+          </div>
+
+          <div class="achievement-grid">
+            <article class="achievement-card glass surface spotlight" data-surface data-reveal>
+              <h3>Professional Highlights</h3>
+              <div class="achievement-card__list">
+                <span>Built voice-first browser experiences</span>
+                <span>Delivered responsive websites during internship work</span>
+                <span>Strengthened secure academic workflow implementation</span>
+              </div>
+            </article>
+            <article class="achievement-card glass surface spotlight" data-surface data-reveal>
+              <h3>Learning Roadmap</h3>
+              <div class="achievement-card__list">
+                <span>Deepening Spring Boot and API architecture</span>
+                <span>Expanding cloud computing and deployment fluency</span>
+                <span>Sharpening premium UI and product thinking</span>
+              </div>
+            </article>
+            <article class="achievement-card glass surface spotlight" data-surface data-reveal>
+              <h3>Work Style</h3>
+              <div class="achievement-card__list">
+                <span>Problem solving with clean execution</span>
+                <span>Mobile-first and accessibility-aware development</span>
+                <span>Consistent curiosity around modern technologies</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="section-head__eyebrow">Services</span>
+            <h2>Ways I can help turn ideas into useful, high-quality digital products.</h2>
+            <p>
+              A service mix that balances frontend feel, backend logic, platform flexibility, and
+              site performance.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card glass surface spotlight" data-surface data-tilt data-reveal>
+              <h3>Full Stack Development</h3>
+              <p>End-to-end web application building with structured frontend and backend delivery.</p>
+            </article>
+            <article class="service-card glass surface spotlight" data-surface data-tilt data-reveal>
+              <h3>WordPress Development</h3>
+              <p>Flexible websites with practical content workflows, customization, and responsive polish.</p>
+            </article>
+            <article class="service-card glass surface spotlight" data-surface data-tilt data-reveal>
+              <h3>Web Application Development</h3>
+              <p>Interactive browser-based solutions focused on usability, logic, and maintainability.</p>
+            </article>
+            <article class="service-card glass surface spotlight" data-surface data-tilt data-reveal>
+              <h3>UI/UX Design</h3>
+              <p>Clean, intuitive, and modern interfaces that improve clarity and user confidence.</p>
+            </article>
+            <article class="service-card glass surface spotlight" data-surface data-tilt data-reveal>
+              <h3>Website Optimization</h3>
+              <p>Mobile-first refinements, performance thinking, and improvements that reduce friction.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="tech-stack">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="section-head__eyebrow">Tech Stack Showcase</span>
+            <h2>A stack built from practical web fundamentals and evolving backend strength.</h2>
+            <p>Core technologies, tools, and concepts currently shaping my workflow.</p>
+          </div>
+
+          <div class="marquee glass surface" data-surface data-reveal>
+            <div class="marquee__track">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Bootstrap</span>
+              <span>Java</span>
+              <span>Spring Boot</span>
+              <span>JSP</span>
+              <span>Servlets</span>
+              <span>JDBC</span>
+              <span>MySQL</span>
+              <span>WordPress</span>
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>Maven</span>
+              <span>REST APIs</span>
+              <span>MVC</span>
+              <span>AWS Fundamentals</span>
+              <span>Responsive Design</span>
+            </div>
+            <div class="marquee__track marquee__track--alt" aria-hidden="true">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Bootstrap</span>
+              <span>Java</span>
+              <span>Spring Boot</span>
+              <span>JSP</span>
+              <span>Servlets</span>
+              <span>JDBC</span>
+              <span>MySQL</span>
+              <span>WordPress</span>
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>Maven</span>
+              <span>REST APIs</span>
+              <span>MVC</span>
+              <span>AWS Fundamentals</span>
+              <span>Responsive Design</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="testimonials">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="section-head__eyebrow">Testimonials Placeholder</span>
+            <h2>Designed to make room for future stories from collaborators, teams, and mentors.</h2>
+            <p>This section is ready for recommendations and social proof as new collaborations grow.</p>
+          </div>
+
+          <div class="testimonials-grid">
+            <article class="testimonial-card glass surface spotlight" data-surface data-reveal>
+              <h3>Future Team Feedback</h3>
+              <p>
+                This layout is ready to showcase recruiter notes, internship feedback, or project
+                collaborations with a premium presentation.
+              </p>
+            </article>
+            <article class="testimonial-card glass surface spotlight" data-surface data-reveal>
+              <h3>Open For Opportunities</h3>
+              <p>
+                Available for roles and projects where modern web engineering, clean UI, and strong
+                execution matter.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="social">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="section-head__eyebrow">Social Links</span>
+            <h2>Connect through platforms where I share work, progress, and snapshots from the journey.</h2>
+            <p>Each card opens in a new tab and carries the same high-energy visual language as the rest of the site.</p>
+          </div>
+
+          <div class="social-grid">
+            <a
+              class="social-card glass surface spotlight"
+              data-surface
+              data-reveal
+              href="https://github.com/misbahcode"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Visit GitHub profile"
+            >
+              <span class="social-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path
+                    d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.72-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .08 1.53 1.05 1.53 1.05.9 1.56 2.35 1.11 2.92.85.09-.67.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.11-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05A9.3 9.3 0 0 1 12 6.91c.85 0 1.71.12 2.51.35 1.91-1.32 2.75-1.05 2.75-1.05.55 1.42.21 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.93-2.35 4.79-4.59 5.05.36.32.69.95.69 1.93 0 1.39-.01 2.5-.01 2.84 0 .27.18.6.69.49A10.27 10.27 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z"
+                  />
+                </svg>
+              </span>
+              <span class="social-card__content">
+                <strong>GitHub</strong>
+                <span>Code repositories, project structure, and developer workflow.</span>
+              </span>
+            </a>
+
+            <a
+              class="social-card glass surface spotlight"
+              data-surface
+              data-reveal
+              href="https://www.linkedin.com/in/mohdmisbah/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Visit LinkedIn profile"
+            >
+              <span class="social-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path
+                    d="M6.94 8.5A1.56 1.56 0 1 0 6.93 5.4 1.56 1.56 0 0 0 6.94 8.5ZM5.6 9.67h2.67V18H5.6V9.67Zm4.34 0h2.56v1.14h.04c.36-.68 1.22-1.4 2.5-1.4 2.67 0 3.16 1.8 3.16 4.13V18h-2.67v-3.95c0-.94-.02-2.15-1.27-2.15-1.28 0-1.47 1.03-1.47 2.08V18H9.94V9.67Z"
+                  />
+                </svg>
+              </span>
+              <span class="social-card__content">
+                <strong>LinkedIn</strong>
+                <span>Professional journey, education path, and career-facing profile.</span>
+              </span>
+            </a>
+
+            <a
+              class="social-card glass surface spotlight"
+              data-surface
+              data-reveal
+              href="https://www.instagram.com/miisbxh/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Visit Instagram profile"
+            >
+              <span class="social-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path
+                    d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5a3.95 3.95 0 0 0 3.95 3.95h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95h-8.5Zm8.98 1.35a1.07 1.07 0 1 1 0 2.15 1.07 1.07 0 0 1 0-2.15ZM12 6.85A5.15 5.15 0 1 1 6.85 12 5.15 5.15 0 0 1 12 6.85Zm0 1.8A3.35 3.35 0 1 0 15.35 12 3.35 3.35 0 0 0 12 8.65Z"
+                  />
+                </svg>
+              </span>
+              <span class="social-card__content">
+                <strong>Instagram</strong>
+                <span>Creative snapshots, travel interests, and personality beyond the code.</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="section-head__eyebrow">Contact</span>
+            <h2>Let’s build something thoughtful, high-performing, and recruiter-ready.</h2>
+            <p>
+              The form validates input, stores submissions in MySQL through a backend API, and
+              gives clear success or error feedback.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-panels">
+              <article class="contact-info glass surface spotlight" data-surface data-reveal>
+                <h3>Current Status</h3>
+                <p>Currently pursuing CDAC DAC in Pune while continuing to sharpen modern web engineering skills.</p>
+              </article>
+              <article class="contact-info glass surface spotlight" data-surface data-reveal>
+                <h3>What I Enjoy</h3>
+                <p>Building scalable applications, learning modern technologies, exploring cloud computing, and solving meaningful product problems.</p>
+              </article>
+              <article class="contact-info glass surface spotlight" data-surface data-reveal>
+                <h3>Hobbies</h3>
+                <p>Driving, traveling, photography, exploring new places, mountain trips, and coding during travel.</p>
+              </article>
+            </div>
+
+            <form class="contact-form glass surface spotlight" data-surface data-reveal id="contactForm" novalidate>
+              <div class="form-field">
+                <input id="name" name="name" type="text" placeholder=" " required />
+                <label for="name">Name</label>
+                <small class="form-error"></small>
+              </div>
+              <div class="form-field">
+                <input id="email" name="email" type="email" placeholder=" " required />
+                <label for="email">Email</label>
+                <small class="form-error"></small>
+              </div>
+              <div class="form-field">
+                <input id="subject" name="subject" type="text" placeholder=" " required />
+                <label for="subject">Subject</label>
+                <small class="form-error"></small>
+              </div>
+              <div class="form-field">
+                <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+                <label for="message">Message</label>
+                <small class="form-error"></small>
+              </div>
+              <div class="form-actions">
+                <button class="button button--primary magnetic" type="submit">Send Message</button>
+                <button class="button button--ghost magnetic" type="button" id="clearForm">Clear Form</button>
+              </div>
+              <p class="form-status" id="formStatus" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__inner glass surface" data-surface>
+        <div>
+          <p class="footer__brand">Mohammad Misbah</p>
+          <p class="footer__copy">(C) 2026 Mohammad Misbah. All Rights Reserved.</p>
+        </div>
+        <div class="footer__links">
+          <a href="#home">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer__links">
+          <a href="https://github.com/misbahcode" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/mohdmisbah/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.instagram.com/miisbxh/" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+      <span></span>
+    </button>
+
+    <div class="project-modal" id="projectModal" aria-hidden="true">
+      <div class="project-modal__backdrop" data-close-modal></div>
+      <div class="project-modal__dialog glass surface spotlight" data-surface role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="project-modal__close" type="button" aria-label="Close project details" data-close-modal>
+          ×
+        </button>
+        <span class="project-modal__eyebrow" id="modalEyebrow"></span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDescription"></p>
+        <div class="project-modal__list" id="modalHighlights"></div>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
