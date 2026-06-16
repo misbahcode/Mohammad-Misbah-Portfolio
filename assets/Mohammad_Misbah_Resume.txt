@@ -1,0 +1,54 @@
+MOHAMMAD MISBAH
+Full Stack Developer | Software Engineer | Web Developer
+Location: Delhi, India
+Current Status: Currently Pursuing CDAC DAC from Pune
+
+PROFESSIONAL SUMMARY
+Full Stack Developer with a growing focus on Java development, Spring Boot, web technologies,
+responsive UI development, WordPress development, software engineering, and cloud computing
+concepts. Passionate about building scalable applications, learning modern technologies,
+exploring innovative solutions, and creating polished modern web experiences.
+
+EDUCATION
+- CDAC DAC, Current, Pune
+- B.Tech in Computer Science & Engineering, Jamia Hamdard University, Delhi
+- Diploma in Computer Science Engineering, Jamia Millia Islamia, Delhi
+
+EXPERIENCE
+Web Developer Intern
+GAO Tek Inc.
+May 2025 - August 2025
+- Designed responsive websites
+- Worked on WordPress development
+- Built with HTML, CSS, and JavaScript
+- Improved UI and UX
+- Applied mobile-first design
+- Helped optimize performance and dynamic web solutions
+
+PROJECTS
+1. INERTIA - Virtual Assistant
+Voice-enabled web application allowing users to interact through speech commands and receive
+real-time responses using speech recognition and text-to-speech technologies.
+GitHub: https://github.com/misbahcode/INERTIA---A-Virtual-Assistant
+
+2. University Result Application
+Web application for secure management and publication of student examination results with
+automated result processing and academic record management.
+GitHub: https://github.com/misbahcode/University-Result-Application
+
+SKILLS
+Frontend: HTML5, CSS3, JavaScript, Bootstrap, Responsive Design
+Backend: Java, JSP, Servlets, JDBC, Spring Boot
+Database: MySQL
+CMS: WordPress
+Tools: Git, GitHub, VS Code, Maven
+Concepts: OOP, REST APIs, MVC Architecture, UI/UX
+Cloud & Future Learning: Cloud Computing, AWS Fundamentals, Deployment Concepts
+
+LANGUAGES
+English, Hindi, Urdu
+
+SOCIAL LINKS
+GitHub: https://github.com/misbahcode
+LinkedIn: https://www.linkedin.com/in/mohdmisbah/
+Instagram: https://www.instagram.com/miisbxh/
